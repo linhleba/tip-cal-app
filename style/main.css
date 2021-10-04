@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --very-dark-blue: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 97%);
+  --light-grayish-cyan-2: hsl(185, 41%, 84%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Space Mono', sans-serif;
+}
+
+.container {
+  padding: 50px;
+}
+
+.container .card-content {
+  background-color: var(--light-grayish-cyan-2);
+  padding: 100px;
+}
+
+.header-content {
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(dark-grayish-cyan-2);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+}
+
+.card .left-card-content {
+  padding: 20px 50px 20px 20px;
+  color: var(--dark-grayish-cyan);
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .left-card-content .bill-content-number {
+  margin: 5px 0px;
+  border-radius: 5px;
+  color: var(--very-dark-blue);
+}
+
+.card .left-card-content .bill-content-number img {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+}
+
+.card .left-card-content .btn-tip-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin: 10px 0px;
+  border-color: none;
+}
+
+.card .left-card-content button {
+  background-color: var(--very-dark-blue);
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.card .left-card-content input {
+  border: none;
+  background-color: var(--light-grayish-cyan);
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.card .left-card-content .people-content input {
+  margin: 5px 0px;
+}
+
+.card .right-card-content {
+  background-color: var(--very-dark-blue);
+  border-radius: 10px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .right-card-content label {
+  color: white;
+  font-weight: bold;
+}
+
+.card .right-card-content p {
+  color: gray;
+}
+
+.card .right-card-content .tip-amount-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .right-card-content .tip-amount-content .left-tip-amount-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .right-card-content .total-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .right-card-content .total-content .left-total-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .right-card-content h1 {
+  color: #26c0ab;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+.card .right-card-content button {
+  background-color: #26c0ab;
+  color: #045c62;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px 6px;
+  border: none;
+  border-radius: 5px;
+}
+
+.tip-content {
+  margin: 30px 0px;
+}
+
+.people-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+/*# sourceMappingURL=main.css.map */
