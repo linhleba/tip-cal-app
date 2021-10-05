@@ -53,6 +53,7 @@ html {
     // flex-basis: 0;
     .bill-content-number {
       // background-color: var(--light-grayish-cyan);
+      display: flex;
       margin: 5px 0px;
       border-radius: 5px;
       color: var(--very-dark-blue);
@@ -74,6 +75,11 @@ html {
         position: absolute;
         align-items: center;
         margin: 15px;
+      }
+      #input-bill {
+        width: auto;
+        flex-grow: 1;
+        // margin-right: -20px;
       }
     }
     .btn-tip-content {
@@ -114,8 +120,8 @@ html {
         margin: 5px 0px;
       }
     }
-    #input-bill {
-      // width: 100%;
+    .bill-content-2 {
+      width: 100%;
     }
   }
   .right-card-content {
@@ -175,4 +181,10 @@ html {
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+@media only screen and (min-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
 }

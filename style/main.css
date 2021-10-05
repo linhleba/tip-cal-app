@@ -63,6 +63,9 @@ html {
 }
 
 .card .left-card-content .bill-content-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 5px 0px;
   border-radius: 5px;
   color: var(--very-dark-blue);
@@ -74,6 +77,13 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px;
+}
+
+.card .left-card-content .bill-content-number #input-bill {
+  width: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .card .left-card-content .btn-tip-content {
@@ -112,6 +122,10 @@ html {
 
 .card .left-card-content .people-content input {
   margin: 5px 0px;
+}
+
+.card .left-card-content .bill-content-2 {
+  width: 100%;
 }
 
 .card .right-card-content {
@@ -210,5 +224,17 @@ html {
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+@media only screen and (min-width: 375px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
